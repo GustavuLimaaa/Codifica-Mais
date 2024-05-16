@@ -1,0 +1,39 @@
+Exercício Teórico:
+1. O que são tags semânticas? Por que devemos utilizá-las? Dê exemplos de tags semânticas.
+
+	R:o uso correto das tags HTML para indicar o significado do conteúdo de uma página web. Devem ser usadas para para estruturar o conteudo da pagina. Exemplos de tags: Header, main, section.
+
+
+2. O que são elementos inline? Dê exemplos.
+	R: São categorias  dos elementos HTML. Exemplos: "<span>Olá, mundo!</span>", "<span>Olá <br> meu nome <br> é <br> Joãozinho</span>"
+
+3. O que são elementos block level? Dê exemplos.
+	R:São elementos que ocupam um espaço do seu elemento pai (container).Exemplo: "<header>","<main>", "<article>"
+
+
+4. Descreva a utilização do atributo ‘alt’ em imagens no HTML e por que é importante
+utilizar esse atributo.
+	R: é usado para descrever oque de fato tem na imagem, uma forma de dar legenda. Em alguns casos, por conta da velocidade de rede
+ou versão web, adequa-se um texto para descrever oque contia ali.
+
+5. Explique o conceito de herança em CSS. Dê exemplo utilizando a propriedade
+‘color’.
+
+ 	R: É a "arvore" do documento, basicamente seguindo um padrão "familiar", (avo, pai, filho...")
+EXEMPLO:
+
+p {color: #900;}
+p em {color: blue;}
+
+6. Explique o que é BEM (Block Element Modifier)
+	R: BEM é uma forma de se nomear e organizar classes do CSS.
+
+
+7. Explique e dê exemplos a diferença entre medidas absolutas e relativas
+	R: As medidas absolutas  não alteram o seu tamanho independente da largura da tela.
+	R: As medidas relativas têm um comportamento diferente dependendo de algum fator previamente definido e também tem fácil adaptação a diferentes tamanhos de tela.
+
+8. Explique o que é a unidade de medida Vw (viewport width) e Vh (viewport height) e a
+diferença entre elas.
+
+ R: Ambas são utilizadas para atribuir a localização  do elemento na tela
