@@ -13,3 +13,13 @@ for ($i = 0; $i < 10; $i++) {
 
 echo "O menor valor digitado foi: " . $menorValor;
 ?>
+
+<?php
+echo "Digite um número: ";
+$numero = intval(fgets(STDIN));
+
+echo "Tabela de multiplicação de " . $numero . ":\n";
+for ($i = 1; $i <= 10; $i++) {
+    echo $numero . " x " . $i . " = " . ($numero * $i) . "\n";
+}
+?>
