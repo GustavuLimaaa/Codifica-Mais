@@ -60,3 +60,23 @@ for ($i = 4; $i >= 0; $i--) {
     echo $numeros[$i] . "\n";
 }
 ?>
+
+<?php
+$numeros = array();
+$dobros = array();
+
+// Lê 6 números inteiros do usuário
+for ($i = 0; $i < 6; $i++) {
+    echo "Digite o " . ($i + 1) . "º número: ";
+    $numeros[$i] = intval(fgets(STDIN));
+}
+
+for ($i = 0; $i < 6; $i++) {
+    $dobros[$i] = $numeros[$i] * 2;
+}
+
+echo "O array com o dobro dos elementos é:\n";
+for ($i = 0; $i < 6; $i++) {
+    echo $dobros[$i] . "\n";
+}
+?>
