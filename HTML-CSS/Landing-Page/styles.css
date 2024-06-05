@@ -7,68 +7,96 @@
 }
 
 body {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #78B47C;
-    color: #F6F6F6;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
 }
 
-.titulo-destaque {
-    color: #1D6F42;
-
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0078D4;
+    color: #fff;
 }
 
-.apresentacao {
-    width: 70%;
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 20px;
 }
 
-.apresentacao__conteudo {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.apresentacao {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
 }
 
 .apresentacao__conteudo__titulo {
-    font-size: 16px;
+    font-size: 24px;
     font-family: 'Krona One', sans-serif;
+    color: #0078D4;
+    margin-bottom: 20px;
 }
 
 .apresentacao__conteudo__texto {
-    font-size: 12px;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.planos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.plano {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+
+.plano h2 {
+    font-size: 20px;
+    color: #0078D4;
+    margin-bottom: 10px;
+}
+
+.plano p {
+    font-size: 14px;
+    margin-bottom: 10px;
 }
 
 .minha-foto {
-    width: 300px;
+    width: 150px;
     height: auto;
-    border: 10px solid #4B925F; /* Adiciona uma borda */
-    border-radius: 16px; /* Adiciona bordas arredondadas */
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 3px solid #0078D4;
 }
 
-
-.apresentacao__links {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.apresentacao__links__link {
-    background-color: #4B925F;
-    width: 280px;
+footer {
     text-align: center;
-    border-radius: 16px;
-    font-size: 24px;
-    font-weight: 600;
-    padding: 21.5px 0;
-    text-decoration: none;
-    color: #000000;
-    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    background-color: #0078D4;
+    color: #fff;
+    margin-top: 20px;
 }
