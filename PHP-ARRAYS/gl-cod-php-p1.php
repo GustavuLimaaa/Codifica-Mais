@@ -80,3 +80,37 @@ for ($i = 0; $i < 6; $i++) {
     echo $dobros[$i] . "\n";
 }
 ?>
+
+
+<?php
+// Inicializa um array vazio para armazenar os números
+$numeros = array();
+
+for ($i = 0; $i < 7; $i++) {
+    echo "Digite o " . ($i + 1) . "º número: ";
+    $numeros[$i] = intval(fgets(STDIN));
+}
+
+echo "Digite o número a ser procurado: ";
+$numeroProcurado = intval(fgets(STDIN));
+
+$posicoes = array();
+
+// Verifica se o número está presente no array e armazena as posições
+for ($i = 0; $i < 7; $i++) {
+    if ($numeros[$i] == $numeroProcurado) {
+        $posicoes[] = $i;
+    }
+}
+
+// Imprime o resultado
+if (count($posicoes) > 0) {
+    echo "O número " . $numeroProcurado . " está presente nas posições: ";
+    foreach ($posicoes as $posicao) {
+        echo $posicao . " ";
+    }
+    echo "\n";
+} else {
+    echo "O número " . $numeroProcurado . " não está presente no array.\n";
+}
+?>
