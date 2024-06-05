@@ -43,3 +43,20 @@ for ($i = 0; $i < 5; $i++) {
 
 echo "A soma dos elementos pares é: " . $soma . "\n";
 ?>
+
+<?php
+$numeros = array();
+
+// Lê 5 números inteiros do usuário
+for ($i = 0; $i < 5; $i++) {
+    echo "Digite o " . ($i + 1) . "º número: ";
+    // Lê a entrada do usuário e converte para inteiro
+    $numeros[$i] = intval(fgets(STDIN));
+}
+
+// Imprime o array em ordem inversa
+echo "O array em ordem inversa é:\n";
+for ($i = 4; $i >= 0; $i--) {
+    echo $numeros[$i] . "\n";
+}
+?>
