@@ -14,15 +14,11 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: 20px;
     background-color: #0078D4;
     color: #fff;
-}
-
-header .logo img {
-    height: 50px;
 }
 
 header nav ul {
